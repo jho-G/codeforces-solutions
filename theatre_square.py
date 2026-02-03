@@ -1,4 +1,4 @@
-a,n,m=map(int,input().split())
+n,m,a=map(int,input().split())
 
 tile_length=(n+a-1)//a
 tile_width=(m+a-1)//a
