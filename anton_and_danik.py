@@ -8,3 +8,14 @@ elif count_D>count_A:
     print("Danik")
 else:
     print("Friendship")
+
+# n=int(input())
+# games=input().strip()
+# count_a=games.count('A')
+# count_d=games.count('D')
+# if count_a>count_d:
+#     print("Anton")
+# elif count_d>count_a:
+#     print("Danik")
+# else:
+#     print("friendship")

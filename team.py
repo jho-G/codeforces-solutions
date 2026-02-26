@@ -6,3 +6,6 @@ for _ in range(n):
             count+=1
 print(count)
     
+
+
+
