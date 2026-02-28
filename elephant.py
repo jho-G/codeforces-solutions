@@ -1,4 +1,3 @@
-e=0
 x=int(input())
 move=x//5
 if x%5!=0:

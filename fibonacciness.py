@@ -1,7 +1,7 @@
 n=int(input())
 
 for _ in range(n):
-    a1,a1,a4,a5=map(int,input().split())
+    a1,a2,a4,a5=map(int,input().split())
     
     c1=a1+a2
     c2=a4-a2
@@ -14,3 +14,5 @@ for _ in range(n):
         print(1)
 
 
+
+    
