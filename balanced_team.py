@@ -1,16 +1,14 @@
-#csec_cpd_E_2
+n = int(input())
+a = list(map(int, input().split()))
 
-n=int(input())
-a=list(map(int,input().split()))
+a.sort()
 
+l = 0
+max_team = 0
 
-count=0
-sorted_a=a.sort()
-max_a=sorted_a[-1]
+for r in range(n):
+    while a[r] - a[l] > 5:
+        l += 1
+    max_team = max(max_team, r - l + 1)
 
-for i in a:
-    if max_a-a[i]<=5:
-        count+=1
-        
-print(count)
-
+print(max_team)

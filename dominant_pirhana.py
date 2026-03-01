@@ -1,12 +1,17 @@
-#csec_cpd_b_1
-t=int(input())
-n=int(input())
+t = int(input())
 
-a=list(map(int,input()))
-
-for i in a:
-    if a[i-1]<a[i] and a[i+1]<a[i]:
-        a[i]=a[i]+1
-        print(a[i])
-    else:
+for _ in range(t):
+    n = int(input())
+    a = list(map(int, input().split()))
+    
+    max_val = max(a)
+    
+    if a.count(max_val) == n:
         print(-1)
+        continue
+    
+    for i in range(n):
+        if a[i] == max_val:
+            if (i > 0 and a[i-1] < a[i]) or (i < n-1 and a[i+1] < a[i]):
+                print(i + 1)   # 1-based index
+                break
